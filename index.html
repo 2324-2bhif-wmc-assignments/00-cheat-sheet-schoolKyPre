@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>CSS Rahmen</h1>
 
-    <p>Lorem ipsum dolor sit amet, 
-       consectetur adipiscing elit, 
-       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-       Ut enim ad minim veniam, 
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-       Excepteur sint occaecat cupidatat non proident, 
-       sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    
-       <p>Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, 
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Typing Text animation</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="text first-text">I'm a</span>
+        <span class="text sec-text"></span>
+        <div>________________________________________</div>
+        <div>this is a website that only serves to help me in class, as this website has every code I should know in the
+            lesson XD
+        </div>
+    </div>
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Student ;)";
+            }, 0)
+            setTimeout(() => {
+                text.textContent = "Youtuber";
+            }, 4000)
+            setTimeout(() => {
+                text.textContent = "Web-Developer";
+            }, 8000)
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000)
+
+    </script>
+
+    <div class="container1">
+        <input type="radio" id="hide">
+        <div class="box">
+            <label for="hide"><i class="fas fa-times">X</i></label>
+            <div class="logo">
+                <img src="profile.png" alt="">
+            </div>
+            <div class="right">
+                <div class="text-1">Subscribe</div>
+                <div class="text-2">Subscribe To My Youtube Channel</div>
+                <a href="https://www.youtube.com/@kypreEasyProgramming?sub_confirmation=1">Subscribe</a>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
