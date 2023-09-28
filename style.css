@@ -21,6 +21,11 @@ body {
     overflow: hidden;
 }
 
+.absatz {
+    position: relative;
+    color: #40e5f4;
+}
+
 .container .text {
     position: relative;
     color: #40e5f4;
