@@ -16,7 +16,8 @@ h1 {
     color: aqua;
     font-size: 60px;
     align-items: center;
-    padding-left: 73px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 h2 {
@@ -27,6 +28,11 @@ h2 {
 h4 {
     color: rgb(0, 0, 0);
     padding: 20px 20px 0px 20px;
+}
+
+a {
+    padding: 100px 0px 0px 80px;
+    color: rgb(26, 159, 159);
 }
 
 div {
