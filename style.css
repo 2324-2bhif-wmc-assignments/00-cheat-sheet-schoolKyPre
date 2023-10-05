@@ -117,22 +117,21 @@ div {
     margin: 0;
 }
 
+/*dark mode css*/
+
 input[type="checkbox"] {
     background-color: aliceblue;
     display: none !important;
     visibility: hidden;
 }
-
 input[type="checkbox"]:checked~.check {
     background-color: #fff;
     z-index: -1;
     box-shadow: 0 0 0 120000px rgb(29, 27, 27);
 }
-
 input[type="checkbox"]:checked~.check::before {
     transform: translateX(-50px);
 }
-
 input[type="checkbox"]:checked~.check::after {
     transform: translateX(0px);
 }
@@ -149,7 +148,6 @@ input[type="checkbox"]:checked~.check::after {
     overflow: hidden;
     transition: ease-in 0.5s;
 }
-
 .check::before {
     cursor: pointer;
     content: '';
@@ -162,7 +160,6 @@ input[type="checkbox"]:checked~.check::after {
     border-radius: 50%;
     transition: 0.5s;
 }
-
 .check::after {
     cursor: pointer;
     content: '';
