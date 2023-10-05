@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Source+Code+Pro:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 body {
@@ -12,109 +12,53 @@ body {
 }
 
 h1 {
-    z-index: 10;
     color: aqua;
     font-size: 60px;
-    align-items: center;
-    margin-left: 75px;
-    margin-right: 75px;
+    transition: steps(12), 0.5s;
 }
 
-h2 {
-    z-index: 10;
-    color: rgb(25, 171, 127);
-    margin-top: 20px;
-    position: relative;
+h3 {
+    margin-top: 10px;
+    color: aqua;
+    font-size: 30px;
 }
 
-h4 {
-    color: rgb(0, 0, 0);
-    padding: 20px 20px 0px 20px;
+.content {
+    color: aqua;
+    font-size: 30px;
 }
 
 a {
-    padding: 100px 0px 0px 80px;
-    color: rgb(26, 159, 159);
+    text-decoration: none;
+    color: rgb(0, 255, 34);
+    font-size: 20px;
 }
 
-div {
-    color: rgb(0, 0, 0);
-    padding: 00px 20px 0px 20px;
+a:hover {
+    transition: all, 0.2s;
+    color: rgb(0, 159, 13);
 }
 
-.list {
-    width: 90%;
-    max-width: 30rem;
-    height: 10%;
-    max-height: 2rem;
+.underpoints {
+    text-decoration: none;
+    color: rgb(255, 0, 140);
+    font-size: 15px;
 }
 
-.accordion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
+.underpoints:hover {
+    transition: all, 0.2s;
+    color: red;
 }
 
-.accordion label {
-    width: 100%;
-    background-color: aqua;
-    font-size: 1.6rem;
-    padding: 1.4rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all 150ms;
-    position: relative;
-    z-index: 2;
+.underunderpoints {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    font-size: 15px;
 }
 
-.accordion label:hover {
-    transform: scale(1.02);
-}
-
-.accordion label img {
-    width: 1.5rem;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translate(0, -50%);
-    transition: 350ms all;
-}
-
-.accordion input:checked~label img {
-    transform: translate(0, -50%) rotate(180deg);
-}
-
-.accordion input:checked~.content {
-    height: auto;
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.accordion input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.accordion .content {
-    color: aliceblue;
-    width: 100%;
-    background-color: rgba(114, 114, 114, 0.363);
-    border-radius: 0 0 1rem 1rem;
-    position: relative;
-    z-index: 1;
-    transform: translate(0, -20%);
-    font-size: 1rem;
-    height: 0;
-    opacity: 0;
-    transition: 350ms all;
-    overflow: hidden;
-}
-
-.accordion .content p {
-    padding: 2rem;
-    margin: 0;
+.underunderpoints:hover {
+    transition: all, 0.2s;
+    color: rgb(30, 0, 255);
 }
 
 input[type="checkbox"] {
@@ -123,34 +67,34 @@ input[type="checkbox"] {
     visibility: hidden;
 }
 
-input[type="checkbox"]:checked~.check {
+input[type="checkbox"]:checked~.checkForDarkmode {
     background-color: #fff;
     z-index: -1;
-    box-shadow: 0 0 0 120000px rgb(29, 27, 27);
+    box-shadow: 0 0 0 120000px rgb(0, 0, 0);
 }
 
-input[type="checkbox"]:checked~.check::before {
+input[type="checkbox"]:checked~.checkForDarkmode::before {
     transform: translateX(-50px);
 }
 
-input[type="checkbox"]:checked~.check::after {
+input[type="checkbox"]:checked~.checkForDarkmode::after {
     transform: translateX(0px);
 }
 
 
-.check {
+.checkForDarkmode {
     position: relative;
     display: block;
     width: 40px;
     height: 20px;
-    background: rgb(29, 27, 27);
+    background: rgb(0, 0, 0);
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
     transition: ease-in 0.5s;
 }
 
-.check::before {
+.checkForDarkmode::before {
     cursor: pointer;
     content: '';
     position: absolute;
@@ -163,16 +107,34 @@ input[type="checkbox"]:checked~.check::after {
     transition: 0.5s;
 }
 
-.check::after {
+.checkForDarkmode::after {
     cursor: pointer;
     content: '';
     position: absolute;
     top: 2px;
     left: 2px;
-    background-color: rgb(29, 27, 27);
+    background-color: rgb(0, 0, 0);
     width: 16px;
     height: 16px;
     border-radius: 50%;
     transition: 0.5s;
     transform: translateX(50px);
+}
+
+.I {
+    animation: animations 1.4s steps(24) infinite;
+}
+
+@keyframes animations {
+
+    0%,
+    90%,
+    100% {
+        color: #000;
+    }
+
+    40%,
+    50% {
+        color: #fff;
+    }
 }
