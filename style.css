@@ -43,6 +43,7 @@ a:hover {
     text-decoration: none;
     color: rgb(255, 0, 140);
     font-size: 15px;
+    cursor: pointer;
 }
 
 .underpoints:hover {
@@ -54,11 +55,12 @@ a:hover {
     text-decoration: none;
     color: rgb(0, 0, 255);
     font-size: 15px;
+    cursor: pointer;
 }
 
 .underunderpoints:hover {
     transition: all, 0.2s;
-    color: rgb(30, 0, 255);
+    color: rgb(18, 0, 158);
 }
 
 /*dark mode css*/
