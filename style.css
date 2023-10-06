@@ -29,6 +29,14 @@ h4 {
     font-size: 25px;
 }
 
+em {
+    color: aqua;
+}
+
+code {
+    color: aqua;
+}
+
 .content {
     color: aqua;
     font-size: 30px;
