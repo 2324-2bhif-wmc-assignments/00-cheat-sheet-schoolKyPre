@@ -11,6 +11,21 @@ body {
     margin: 20px;
 }
 
+.footer {
+    padding: 100px;
+    text-align: center;
+    background-color: #0058664b;
+    color: rgb(0, 247, 255);
+    margin-top: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.noLink {
+    color: aqua;
+    font-size: 20px;
+}
+
 h1 {
     color: aqua;
     font-size: 60px;
@@ -20,7 +35,7 @@ h1 {
 h3 {
     margin-top: 50px;
     color: aqua;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 h4 {
@@ -39,8 +54,55 @@ code {
 
 .content {
     color: aqua;
-    font-size: 30px;
+    font-size: 25px;
 }
+
+/*treestructure start*/
+
+.tree {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tree li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.tree li::marker {
+    content: '-';
+    font-size: 30px;
+    color: aqua;
+}
+
+.tree li::before {
+    margin-right: 10px;
+}
+
+.tree .empty::marker {
+    content: '';
+}
+
+.node::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    border-left: 4px solid aqua;
+    height: 100%;
+}
+
+.tree ul {
+    padding-left: 20px;
+    position: relative;
+}
+
+.node {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*treestructure end*/
 
 .undercontent {
     color: rgb(0, 255, 34);
@@ -61,7 +123,8 @@ strong {
 a {
     text-decoration: none;
     color: rgb(0, 255, 34);
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 a:hover {
@@ -72,8 +135,9 @@ a:hover {
 .underpoints {
     text-decoration: none;
     color: rgb(255, 0, 140);
-    font-size: 15px;
+    font-size: 25px;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .underpoints:hover {
@@ -84,8 +148,9 @@ a:hover {
 .underunderpoints {
     text-decoration: none;
     color: rgb(0, 0, 255);
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .underunderpoints:hover {
