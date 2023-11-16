@@ -1,50 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&family=Source+Code+Pro:wght@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    margin: 20px;
-}
-
-.footer {
-    padding: 100px;
-    text-align: center;
-    background-color: #0058664b;
-    color: rgb(0, 247, 255);
-    margin-top: 300px;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-.noLink {
-    color: aqua;
-    font-size: 20px;
+    background-color: #15191f;
+    background-image: url("png/background.png");
+    height: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
-    color: aqua;
-    font-size: 60px;
-    transition: steps(12), 0.5s;
+    margin-top: 8rem;
+    color: #fff;
+    font-size: 3rem;
 }
 
 h3 {
-    margin-top: 50px;
-    color: aqua;
-    font-size: 45px;
+    color: #fff;
 }
 
 h4 {
-    margin-top: 20px;
-    color: rgb(255, 0, 140);
-    font-size: 25px;
+    margin-top: 1.2rem;
+    text-decoration: underline;
 }
 
-em {
+i {
     color: aqua;
 }
 
@@ -52,196 +37,138 @@ code {
     color: aqua;
 }
 
-.content {
-    color: aqua;
-    font-size: 25px;
-}
-
-/*treestructure start*/
-
-.tree {
-    list-style-type: none;
-    padding: 0;
-}
-
-.tree li {
-    position: relative;
-    padding-left: 15px;
-}
-
-.tree li::marker {
-    content: '-';
-    font-size: 30px;
-    color: aqua;
-}
-
-.tree li::before {
-    margin-right: 10px;
-}
-
-.tree .empty::marker {
-    content: '';
-}
-
-.node::before {
-    content: '';
-    position: absolute;
-    left: -10px;
+.menubar {
+    display: flex;
+    position: fixed;
+    width: 100%;
     top: 0;
-    border-left: 4px solid aqua;
-    height: 100%;
+    right: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d0e11;
+    padding: 28px 12%;
+    transition: all 0.50s ease;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    height: 4.5rem;
 }
 
-.tree ul {
-    padding-left: 20px;
-    position: relative;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.node {
-    font-weight: bold;
-    margin-left: 10px;
+.menubar img {
+    height: 2rem;
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
-/*treestructure end*/
-
-.undercontent {
-    color: rgb(0, 255, 34);
-    padding-left: 30px;
+.menubar a {
+    color: #a4b1cd;
+    transition: all 0.2s;
 }
 
-strong {
-    color: aqua;
+.menubar a:hover {
+    color: #fff;
 }
 
-.commentare {
-    color: rgb(0, 159, 13);
-    /*position: relative;*/
-    position: sticky;
-    margin-left: 10px;
+.content {
+    color: #a4b1cd;
+    text-align: center;
+}
+
+.choosemenu {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem;
+}
+
+.contain {
+    width: 40rem;
+    height: auto;
+    transition: all 0.4s;
+    margin: 2.5rem;
+    border: 2px solid #fff;
+    padding: 1rem;
+    background-color: #0d0e1195;
+    border-radius: 1rem;
+}
+
+li {
+    margin-top: 0.3vh;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem;
+}
+
+.window {
+    width: 25rem;
+    height: auto;
+    transition: all 0.4s;
+    margin: 2.5rem;
+    border: 2px solid #fff;
+    padding: 1rem;
+}
+
+.window:hover {
+    transform: translateY(-8%);
+    border: 4px solid aqua;
+}
+
+.window img {
+    width: 50%;
+    transition: all 2.5s;
+}
+
+.window:hover img {
+    transform: rotateY(360deg);
 }
 
 a {
     text-decoration: none;
-    color: rgb(0, 255, 34);
-    font-size: 30px;
-    margin-bottom: 20px;
+    color: #a4b1cd;
 }
 
-a:hover {
-    transition: all, 0.2s;
-    color: rgb(0, 159, 13);
+.account {
+    background-color: aqua;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
-.underpoints {
-    text-decoration: none;
-    color: rgb(255, 0, 140);
-    font-size: 25px;
-    cursor: pointer;
-    margin-top: 25px;
+.account a {
+    color: #101a28;
 }
 
-.underpoints:hover {
-    transition: all, 0.2s;
-    color: red;
+.goto {
+    color: #fff;
 }
 
-.underunderpoints {
-    text-decoration: none;
-    color: rgb(0, 0, 255);
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 5px;
+.goto:hover {
+    color: aqua;
 }
 
-.underunderpoints:hover {
-    transition: all, 0.2s;
-    color: rgb(18, 0, 158);
-}
-
-/*dark mode css*/
-
-input[type="checkbox"] {
-    background-color: aliceblue;
-    display: none !important;
-    visibility: hidden;
-}
-
-input[type="checkbox"]:checked~.checkForDarkmode {
-    background-color: #fff;
-    z-index: -1;
-    box-shadow: 0 0 0 120000px rgb(0, 0, 0);
-}
-
-input[type="checkbox"]:checked~.checkForDarkmode::before {
-    transform: translateX(-50px);
-}
-
-input[type="checkbox"]:checked~.checkForDarkmode::after {
-    transform: translateX(0px);
-}
-
-input[type="checkbox"]:checked~.check::before {
-    transform: translateX(-50px);
-}
-
-input[type="checkbox"]:checked~.check::after {
-    transform: translateX(0px);
-}
-
-
-.checkForDarkmode {
+.footer {
+    color: aqua;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    background-color: #0d0e11d2;
+    text-align: center;
+    padding: 10px;
+    border: 0.3rem double black;
     position: relative;
-    display: block;
-    width: 40px;
-    height: 20px;
-    background: rgb(0, 0, 0);
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: ease-in 0.5s;
 }
 
-.checkForDarkmode::before {
-    cursor: pointer;
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    background-color: #fff;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-.checkForDarkmode::after {
-    cursor: pointer;
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    background-color: rgb(0, 0, 0);
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.5s;
-    transform: translateX(50px);
-}
-
-.I {
-    animation: animations 1.4s steps(24) infinite;
-}
-
-@keyframes animations {
-
-    0%,
-    90%,
-    100% {
-        color: #000;
-    }
-
-    40%,
-    50% {
-        color: #fff;
-    }
+strong {
+    color: aqua;
 }
