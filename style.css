@@ -46,7 +46,8 @@ code {
     z-index: 100;
     align-items: center;
     justify-content: space-between;
-    background-color: #0d0e11;
+    background-color: #0d0e1196;
+    backdrop-filter: blur(0.25rem);
     padding: 28px 12%;
     transition: all 0.50s ease;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -102,6 +103,7 @@ li {
 }
 
 .container {
+    margin-top: 10px;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -171,4 +173,39 @@ a {
 
 strong {
     color: aqua;
+}
+
+
+.typewriter h1 {
+    border: 0 0 0 0;
+    width: fit-content;
+    display: flex;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 255, 247);
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(0, 255, 247);
+    }
 }
