@@ -125,6 +125,51 @@
                 <br>
                 <a href="https://developer.mozilla.org/en-US/docs/Web"><code>find more</code></a>
             </div>
+
+            <div class="contain">
+                <h3>selector</h3>
+                <div class="elementselector">
+                    <h4>element-selector</h4>
+                    <div class="undercontent">
+                        &lt;p>&lt;/p> <strong>=></strong> p {}
+                    </div>
+                </div>
+                <div class="classselector">
+                    <h4>class-selector</h4>
+                    <div class="undercontent">
+                        &lt;p class="test">&lt;/p> <strong>=></strong> .test {}
+                    </div>
+                </div>
+                <div class="idselector">
+                    <h4>id-selector</h4>
+                    <div class="undercontent">
+                        &lt;p id="test">&lt;/p> <strong>=></strong> #test {}
+                    </div>
+                </div>
+                <div class="selector">
+                    <h4>verschachtelter-selector</h4>
+                    <div class="undercontent">
+                        &lt;div>&lt;p>&lt;/p>&lt;/div> <strong>=></strong> div p {}
+                    </div>
+                </div>
+                <div class="nachbarselector">
+                    <h4>neighbour-selector</h4>
+                    <div class="undercontent">
+                        hier werden h1 elemente ausgewählt die direkt nach p kommen
+                        &lt;div>&lt;p>&lt;/p>&lt;h1>&lt;/h1>&lt;/div> <strong>=></strong> div p+h1 {}
+                    </div>
+                </div>
+                <div class="nachbarselector">
+                    <h4>neighbour-selector</h4>
+                    <div class="undercontent">
+                        In diesem Beispiel werden alle &lt;li>-Elemente, die nach dem Element mit der Klasse "test"
+                        erscheinen, ausgewählt. Beachte, dass der Tilde-Selektor nur nachfolgende
+                        Geschwisterelemente auswählt und nicht vorhergehende Geschwister. <br>
+                        &lt;li>&lt;/li> <br> &lt;li class="test">&lt;/li> <br> &lt;li>&lt;/li> <br> &lt;li>&lt;/li>
+                        &lt;br> <strong>=></strong> .test ~ li {}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
